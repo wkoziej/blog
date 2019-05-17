@@ -1,3 +1,1 @@
-# blog
-Binary Logic
-Good or Bad, Hard To Say.
+# Binary Logic
