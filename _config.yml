@@ -1,45 +1,40 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title_left    : "Binary"
-title_right   : "Logic" # default: ""
-description   : "Good or Bad - hard to say "
-keywords      : ""
-baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover         : "" # image uri like logo/cover image for site seo
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Binary Logic
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Good or Bad - hard to say
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+github_username:  wkoziej
 url: "https://wkoziej.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
-google_analytics  : UA-XXXXX-XX
-#twitter_username  : ""
-comments_enabled  : false # if enabled (set to true), please provide your disqus_username
-disqus_shortname  : ""
-postshare_enabled : true
-
 # Build settings
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : rouge
-
-source      : ./
-destination : ./_site
-
-# Sass configuration
-sass:
-  sass_dir  : assets/scss
-  style     : compressed # expanded
-
-# Author settings
-author:
-  name     : "Wojciech Koziej"
-
+markdown: kramdown
+theme: minima
 plugins:
-  - jekyll-sitemap
-  - bourbon
-  - jekyll-paginate
+  - jekyll-feed
 
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
